@@ -1,0 +1,166 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.search-form {
+    position: relative;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    color: #007bff;
+}
+
+.form-control {
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+}
+
+.btn-primary {
+    padding: 12px 25px;
+    border-radius: 10px;
+}
+
+.quick-search {
+    transition: all 0.2s;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+.quick-search:hover {
+    background-color: #0d6efd;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.footer {
+    margin-top: auto;
+    box-shadow: 0 -1px 3px rgba(0,0,0,0.1);
+}
+
+#loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255,255,255,0.9);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Results Page Specific Styles */
+.animate-card {
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.rank-badge {
+    background: linear-gradient(135deg, #0d6efd, #0099ff);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(13, 110, 253, 0.2);
+}
+
+.url-container {
+    background: #f8f9fa;
+    padding: 10px 15px;
+    border-radius: 5px;
+    word-break: break-all;
+}
+
+.url-container a:hover {
+    color: #0056b3;
+}
+
+.snippet-box {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 4px solid #0d6efd;
+    margin-top: 5px;
+}
+
+.result-details label {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Bulk Analysis Styles */
+.nav-link {
+    color: rgba(255,255,255,0.8) !important;
+}
+
+.nav-link.active {
+    color: white !important;
+    font-weight: 500;
+}
+
+textarea.form-control {
+    font-family: monospace;
+    resize: vertical;
+}
+
+.table th {
+    font-weight: 600;
+    color: #495057;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+@media print {
+    .navbar, 
+    .footer, 
+    form,
+    .btn {
+        display: none !important;
+    }
+    
+    .card {
+        box-shadow: none !important;
+        border: 1px solid #dee2e6;
+    }
+}

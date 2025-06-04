@@ -1,0 +1,27 @@
+{
+  "name": "ranking-agent-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "2captcha": "^3.0.5-2",
+    "axios": "^1.9.0",
+    "chart.js": "^4.4.9",
+    "csv-writer": "^1.6.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "puppeteer": "^19.7.0",
+    "puppeteer-core": "^24.10.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "winston": "^3.17.0"
+  }
+}

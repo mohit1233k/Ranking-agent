@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking Results | WebReinvent</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="/styles.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-chart-line me-2"></i>
+                WebReinvent Rank Tracker
+            </a>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <!-- Quick Search Form -->
+                <form action="/search" method="POST" class="mb-4">
+                    <div class="input-group">
+                        <input type="text" name="keyword" class="form-control" 
+                               value="<%= ranking.keyword %>" required>
+                        <button class="btn btn-primary" type="submit">
+                            <i class="fas fa-search me-2"></i>Search
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Results Card -->
+                <div class="card shadow-lg animate-card">
+                    <div class="card-header bg-primary text-white py-3">
+                        <h5 class="card-title mb-0">
+                            <i class="fas fa-search me-2"></i>
+                            Search Results for "<%= ranking.keyword %>"
+                        </h5>
+                    </div>
+                    <div class="card-body p-4">
+                        <% if (ranking.rank) { %>
+                            <div class="rank-badge mb-4">
+                                <div class="display-4 text-center">
+                                    #<%= ranking.rank %>
+                                </div>
+                                <div class="text-muted text-center">Current Position</div>
+                            </div>
+
+                            <div class="result-details">
+                                <div class="mb-3">
+                                    <label class="text-muted mb-1">Page Title</label>
+                                    <div class="h5"><%= ranking.title %></div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="text-muted mb-1">URL</label>
+                                    <div class="url-container">
+                                        <a href="<%= ranking.url %>" target="_blank" 
+                                           class="text-primary text-decoration-none">
+                                            <i class="fas fa-external-link-alt me-2"></i>
+                                            <%= ranking.url %>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="text-muted mb-1">Last Updated</label>
+                                    <div>
+                                        <i class="far fa-clock me-2"></i>
+                                        <%= new Date(ranking.timestamp).toLocaleString() %>
+                                    </div>
+                                </div>
+
+                                <% if (ranking.snippet) { %>
+                                <div class="mt-4">
+                                    <label class="text-muted mb-1">Search Snippet</label>
+                                    <div class="snippet-box">
+                                        <%= ranking.snippet %>
+                                    </div>
+                                </div>
+                                <% } %>
+                            </div>
+                        <% } else { %>
+                            <div class="text-center py-4">
+                                <i class="fas fa-exclamation-circle text-warning display-1 mb-3"></i>
+                                <h4 class="text-danger">Not Found</h4>
+                                <p class="text-muted">
+                                    WebReinvent was not found in the search results for this keyword.
+                                </p>
+                            </div>
+                        <% } %>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="text-center mt-4">
+                    <a href="/" class="btn btn-outline-primary me-2">
+                        <i class="fas fa-search me-2"></i>New Search
+                    </a>
+                    <button onclick="window.print()" class="btn btn-outline-secondary">
+                        <i class="fas fa-print me-2"></i>Print Report
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-5 py-3 bg-white">
+        <div class="container text-center">
+            <span class="text-muted">© 2025 WebReinvent Rank Tracker</span>
+        </div>
+    </footer>
+</body>
+</html>

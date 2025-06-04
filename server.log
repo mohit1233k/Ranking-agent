@@ -1,0 +1,61 @@
+2025-06-04T10:57:23.929Z - info: Server running at http://localhost:3000
+2025-06-04T10:57:29.587Z - info: Processed 10 keywords for analysis
+2025-06-04T10:57:38.756Z - info: Starting bulk search for 2 keywords
+2025-06-04T10:57:38.758Z - info: Searching for keyword: Laravel development company
+2025-06-04T10:58:00.650Z - info: Searching for keyword: Laravel Development Services Company
+2025-06-04T10:58:13.511Z - info: Processed 10 keywords for analysis
+2025-06-04T10:58:42.526Z - info: Processed 10 keywords for analysis
+2025-06-04T10:58:55.582Z - info: Starting bulk search for 2 keywords
+2025-06-04T10:58:55.583Z - info: Searching for keyword: Laravel development company
+2025-06-04T11:00:36.034Z - info: Processed 10 keywords for analysis
+2025-06-04T11:00:52.876Z - info: Server running at http://localhost:3000
+2025-06-04T11:00:55.062Z - info: Processed 10 keywords for analysis
+2025-06-04T11:03:11.055Z - info: Processed 11 keywords for analysis
+2025-06-04T11:08:27.428Z - info: Server running at http://localhost:3000
+2025-06-04T11:08:33.059Z - info: Processed 11 keywords for analysis
+2025-06-04T11:08:48.347Z - info: Starting bulk search for 2 keywords
+2025-06-04T11:08:48.348Z - info: Searching for keyword: Laravel development company
+2025-06-04T11:09:36.477Z - info: Searching for keyword: Laravel Development Services Company
+2025-06-04T11:09:49.577Z - info: Processed 11 keywords for analysis
+2025-06-04T11:10:42.693Z - info: Server running at http://localhost:3000
+2025-06-04T11:10:45.358Z - info: Processed 11 keywords for analysis
+2025-06-04T11:11:35.057Z - info: Server running at http://localhost:3000
+2025-06-04T11:11:39.857Z - info: Processed 11 keywords for analysis
+2025-06-04T11:11:47.317Z - info: Starting bulk search for 2 keywords
+2025-06-04T11:11:47.318Z - info: Searching for keyword: Laravel development company
+2025-06-04T11:12:03.002Z - info: Searching for keyword: Laravel Development Services Company
+2025-06-04T11:12:16.812Z - info: Processed 11 keywords for analysis
+2025-06-04T11:14:01.357Z - info: Server running at http://localhost:3000
+2025-06-04T11:14:13.531Z - info: Processed 11 keywords for analysis
+2025-06-04T11:14:13.551Z - error: Server error: E:\Projects\Ranking agent\ranking-agent-node\views\bulk-analysis.ejs:12
+    10|     <script>
+    11|         const SEARCH_CONFIG = {
+ >> 12|             maxPages: <%= SEARCH_CONFIG.maxPages %>,
+    13|             resultsPerPage: <%= SEARCH_CONFIG.resultsPerPage %>
+    14|         };
+    15|     </script>
+
+SEARCH_CONFIG is not defined
+2025-06-04T11:14:16.950Z - info: Processed 11 keywords for analysis
+2025-06-04T11:14:16.953Z - error: Server error: E:\Projects\Ranking agent\ranking-agent-node\views\bulk-analysis.ejs:12
+    10|     <script>
+    11|         const SEARCH_CONFIG = {
+ >> 12|             maxPages: <%= SEARCH_CONFIG.maxPages %>,
+    13|             resultsPerPage: <%= SEARCH_CONFIG.resultsPerPage %>
+    14|         };
+    15|     </script>
+
+SEARCH_CONFIG is not defined
+2025-06-04T11:16:05.596Z - info: Server running at http://localhost:3000
+2025-06-04T11:16:12.202Z - info: Processed 11 keywords for analysis
+2025-06-04T11:16:21.038Z - info: Starting bulk search for 2 keywords
+2025-06-04T11:16:21.040Z - info: Searching for keyword: Laravel development company (up to 5 pages)
+2025-06-04T11:17:27.984Z - info: Searching for keyword: Laravel Development Services Company (up to 5 pages)
+2025-06-04T11:18:22.023Z - info: Processed 11 keywords for analysis
+2025-06-04T11:20:46.775Z - info: Server running at http://localhost:3000
+2025-06-04T11:20:50.680Z - info: Processed 11 keywords for analysis
+2025-06-04T11:21:17.184Z - info: Starting bulk search for 2 keywords
+2025-06-04T11:21:17.186Z - info: Searching for keyword: Laravel development company (up to 5 pages)
+2025-06-04T11:22:28.875Z - info: Searching for keyword: NuxtJs Development Services Company India (up to 5 pages)
+2025-06-04T11:23:43.606Z - info: Processed 11 keywords for analysis
+2025-06-04T11:27:58.067Z - info: Server running at http://localhost:3000
